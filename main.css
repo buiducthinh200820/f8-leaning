@@ -1,0 +1,20 @@
+ /* h1 {color:red;font: size 30px;}  */
+    #first-heading{color: red;}
+    .seccond{color:violet;}
+ /* .children{color: red;} */
+ /* đặt biến có thể thay đổi nhiều element cùng lúc có 2 loại là cục bộ và toàn cục */
+ :root{
+     --my-color:violet ;
+ }
+h1::selection{
+    color:var(--my-color) !important;
+    background-color: red;
+}
+.seccond{
+    top:0px;
+    right:0px;
+}
+.class{
+    top:0px;
+    right:0px;
+}

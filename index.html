@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<!-- CÁC THẺ HTML THÔNG THƯỜNG 
+    h1-h6-heading-tiêu đề
+    p-paragrap-đoạn văn(pre: Quấn bài thơ này xung quanh các thẻ HTML sẽ bảo toàn tất cả các khoảng trắng và dấu ngắt dòng khi phần tử được hiển thị
+    br:xuống dòng ,<q></q> để thêm ngặc vào chữ đó ,<mark></mark> để tạo chữ in đậm  )
+    hr: ngắt theo chủ đề hết 1 chủ đề thì ngắt 
+    img-image-file ảnh 
+    a-anchor-neo liên kết 
+    ul,li-unnordered list,list item-danh sách là đấu chấm 
+    ol,li -như trên nhưng là số 
+    table-bảng 
+    input-đầu vào để nhập dữ liệu ,checkbox,radio chỉ chọn 1 cái nếu cùng name 
+    button-nút nhấn 
+    div-tạo 1 khối bao quanh 
+     attribute-thuộc tính html nằm trong thẻ mở  
+ -->
+ <!-- CÁC CÁCH SỬ DỤNG CSS TRONG VĂN BẢN HTML
+     1:internal:sử dụng 1 cặp thẻ style trong html viết css vào đó 
+     2:external:tạo file bên ngoài rồi link sang html: kiểm tra xem link thành công chưa thì ấn f12 vào phần sources kiểm tra xem có file css k 
+     3:inline sử dụng 1 attribute style trong thẻ mở của html
+  -->
+ <!-- ID VÀ CLASS ĐỀU NẰM TRONG CSS SELECTORS CÁCH GỌI ĐẾN CÁC ELEMENT(PHẦN TỬ)TRONG HTML
+      ID(identifier) gán để gọi đến các phần tử sang css chỉ sử dụng duy nhất 1 id trong 1 bài dùng dấu #
+      CLASS gán để gọi đến các phần tử sang css sử dụng được nhiều lần dùng dấu . để gọi 
+ -->
+ <!-- CSS UNITS
+    ABSOLUTE UNITS :ĐƠN VỊ TUYỆT ĐỐI K THAY ĐỔI 
+    px
+    RELATIVE UNITS: ĐƠN VỊ TƯƠNG ĐỐI THAY ĐỔI  
+    % phụ thuộc vào thẻ chứa nó 
+    rem phụ thuộc vào thẻ html 1rem=html
+    em phụ thuộc vào thẻ cha của nó 
+    vw viewport width phụ thuôcj vào trình duyệt 
+    vh viewport height phụ thuôcj vào trình duyệt 
+-->
+<!-- ccs funtion
+    var:đặt biến 
+    attr:
+ -->
+ <!-- css pseudo-classes( lớp giả )
+:root(tham chiếu tới cặp thẻ html)
+:hover(thay đổi thuộc tính khi ta di chuột vào )
+:active(thay đổi thuộc tính khi ta bấm và giữ chuột)
+:first-child(lấy tập con đầu tiên của thẻ bố )
+:last-child(lấy tập con cuối cùng của thẻ bố )
+-->
+<!-- css pseudo- elements( phần tử giả )
+::before
+::after
+::first -letter( kỹ tự đầu tiên)
+::first-line(dòng đầu tiên)
+::selecter
+-->
+<!--đệm viền lớp khoảng lề 
+    lớp trong cùng : lớp content
+    padding: lớp đệm: nếu có 2 giá trị đc hiểu là 2 trên và trái phải ;4 giá trị thì theo chiều kim đồng hồ 
+    broder:lớp viền 
+    margin:tạo khoảng cách giừa các box lấy tay kéo box theo hướng ngược lại
+    box-sizing: boder-box để tính toán giữ nguyên khối ban đầu 
+   -->
+
+
+<html>
+    <!-- phần đầu  -->
+    <head>
+        <!-- tên web -->
+         <title >web của anh thịnh</title>
+         <!-- định nghĩa tiếng việt  -->
+         <meta charset="utf-8"> 
+         <link rel="stylesheet" href="main.css">
+    </head>
+    <!-- phần thân  -->
+    <body>
+        <!-- <style>
+            h1 {color:red;font: size 30px;} cặp thuốc tính :giá trị
+        </style> -->
+    <pre>
+        <h2 style="color: green;font-size: 5=30px;">bùi đức thịnh </h2>
+        <h2 class="seccond"> <br> aloalo</br></h2>
+        <h2 class="seccond"> aloalo</h2>
+    </pre>
+    <div>
+        <h4 class="thinh">thinh thinh</h4>
+    </div>
+    <div>
+            <h1   id="first-heading"title="đây là tiêu đề">đức thinh bùi<br/>dòng thứ 2 </h1>
+        <!-- cài đặt phông chữ cho đoạn văn  strong để in đậm chữ thêm tầm quan trọng-->
+        <p style="font-family:courier;"><br>This is a <strong>paragraph</br></strong></p>
+        <!-- căn chỉnh văn bản cho về giữa -->
+        <p style="text-align:center;">This is<q>a</q>  <mark>paragraph.</mark></p>
+        <img src="https://itcafe.vn/wp-content/uploads/2021/01/anh-gai-xinh-4.jpg" alt="ảnh anh thịnh">
+       <a href="https://www.facebook.com/photo?fbid=257064998828479&set=a.102171980984449">facebook anh thịnh </a>
+       <ul>
+           <li>học 1</li>
+           <li>học 2</li>
+           <li>học 3</li>
+           <li>học 4</li>
+       </ul>
+       <table>
+           <thead>
+               <th>stt</th>
+               <th>tên</th>
+               <th>địa chỉ </th>
+
+           </thead>
+           <tbody>
+               <tr>
+                   <td>1</td>
+                   <td>bùi đức thịnh<nav>
+                    <td>nam định  <nav>    
+               </tr>
+               <tr>
+                <td>2</td>
+                <td>bùi đức thịnh2<nav>
+                 <td>nam định 2  <nav>    
+            </tr>
+           </tbody>          
+       </table>
+       <input name="giới tính"type="radio">
+       <input name="giới tính"type="radio">
+       <input name="giới tính"type="radio">
+       <button>đăng ký </button>
+    </div>
+    <style>
+         h1{ 
+        position: relative;
+        top: 100px;
+        }
+        /* .children{color: blue} */
+        p{color: chocolate !important}
+        .parent .children{color: deepskyblue; }
+         /* .box{width: 50%;height: 50px;background-color: red;}  */
+          .boxj{width: calc(100px+50%);height: 50px;background-color: rgb(0,0,0)} 
+        html{font-size: 40px;}
+        li{font-size: 1rem;}
+        a::after{
+            content: "("attr(href)")";
+        }
+        li:hover:last-child{
+            color: chocolate;
+            font-size: 50px;
+        }
+        /* .box:active{background-color: cyan;} */
+        .boxj::before{
+            text-align: center;
+            content: "xin chào ";
+            font-size: 15px;
+            /* định dạng khối cho thẻ  */
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+        .box{
+            text-align: center;
+            font-size: 15px;
+            /* định dạng khối cho thẻ  */
+            display: block;
+            width: 50px;
+            height: 50px;
+            /* để các khối nằm ngang */
+            float:left;
+            
+            
+        }
+        .box1{background-color: blue;padding: 10px;}
+        .box2{background-color:brown;border:5px solid #333}
+        .box3{background-color:chocolate;margin: 10px;}
+
+        
+        
+        
+    </style>
+    <div class="parent">
+    <div class="children">
+        Tên đăng nhập
+        <input type="text">
+        Mật khẩu
+        <input type="password">
+        </div>
+        <div>
+        <input name="gender" type="radio">Nam
+        <input name="gender" type="radio">Nữ
+        <input name="gender" type="radio">Khác
+        </div>
+        
+        <div>
+        <input name="answer" type="checkbox">Đáp án 1
+        <input name="answer" type="checkbox">Đáp án 2
+        <input name="answer" type="checkbox">Đáp án 3
+        <input name="answer" type="checkbox">Đáp án 4
+        </div>
+        <div>
+        <input type="submit" value="Đăng ký">
+        <div class="boxj "></div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        
+        
+    </div>
+    </div>
+    </body>
+</html>
